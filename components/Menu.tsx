@@ -10,7 +10,7 @@ export default function Menu() {
   };
 
   return (
-    <div className="flex justify-end items-end p-6">
+    <div className="flex justify-end items-end p-4">
       <div className="relative">
         <button
           onClick={toggleMenu}

@@ -12,10 +12,10 @@ const HomeTextProps = {
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_0.5fr_20px] items-center justify-items-center min-h-screen  gap-16  ">
+    <div className="grid lg:grid-rows-[20px_0.5fr_20px] grid-rows-[5px_0fr_5px] items-center justify-items-center min-h-screen gap-16">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div className="flex flex-col">
-          <div className="flex justify-center align-middle items-center gap-32">
+          <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:gap-32">
             <HomeText
               title={HomeTextProps.title}
               greetings={HomeTextProps.greetings}
@@ -24,7 +24,7 @@ export default function Home() {
             />
             <HomeCarousel />
           </div>
-          <div className="flex justify-center align-middle items-center">
+          <div className="flex justify-center align-middle items-center lg:mt-0 mt-[74px]">
             <TfiArrowCircleUp className="w-[32px] h-[32px]" />
           </div>
         </div>
