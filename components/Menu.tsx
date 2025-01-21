@@ -10,14 +10,14 @@ export default function Menu() {
   };
 
   return (
-    <div className="flex justify-end items-end p-8">
+    <div className="flex justify-end items-end p-6">
       <div className="relative">
         <button
           onClick={toggleMenu}
           className="text-2xl p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
           aria-label="Toggle menu"
         >
-          <HiMiniBars3BottomRight />
+          <HiMiniBars3BottomRight className="w-[40px] h-[40px]" />
         </button>
 
         {isOpen && (
